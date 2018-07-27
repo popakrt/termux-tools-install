@@ -1,7 +1,7 @@
 #!/bin/bash
 cd ～
 #Install common tools
-pkg install nmap hydra sslscan python python-dev python2 python2-dev curl tsu vim wget git unzip unrar sl clang nodejs php cmatrix tree toilet figlet cowsay w3m vim-python -y
+pkg install nmap hydra sslscan python python-dev python2 python2-dev curl tsu vim wget git unzip unrar sl clang nodejs php cmatrix tree toilet figlet cowsay w3m vim-python hotp screenfetch -y
 #Update pip
 python2 -m pip install --upgrade pip
 python -m pip install --upgrade pip
@@ -49,7 +49,7 @@ cd
 #ipython
 pip install ipython
 #Kuso
-toilet -f mono9 -F gay nidhogg
+toilet -f mono12 -F gay nidhogg
 #Install excellent third party Library
 #Note: time may be very long
 LDFLAGS=" -lm -lcompiler_rt" pip install numpy==1.12.1
