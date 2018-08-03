@@ -6,7 +6,9 @@ if test $choice -eq 1
 	then
 		cd
 		#Install common tools
-		pkg install nmap hydra sslscan python python-dev python2 python2-dev curl tsu vim wget git unzip unrar sl clang nodejs php cmatrix tree toilet figlet cowsay w3m htop screenfetch -y
+		pkg install nmap hydra sslscan python python-dev python2 python2-dev curl tsu vim wget git unzip unrar sl clang nodejs php cmatrix tree toilet figlet cowsay w3m htop screenfetch aria2 tmux proot nginx nyancat openssh moon-buggy lua -y
+		#mapscii
+		npm install mapscii -g
 		#Update pip
 		python2 -m pip install --upgrade pip
 		python -m pip install --upgrade pip
@@ -38,14 +40,6 @@ if test $choice -eq 1
 		cd WPSeku
 		pip install -r requirements.txt
 		cd
-		#setoolkit
-		git clone https://github.com/Techzindia/setoolkit-for-termux.git
-		cd setoolkit-for-termux/
-		chmod +x setoolkit.sh
-		bash setoolkit.sh
-		mv setoolkit ..
-		cd
-		rm -rf setoolkit-for-termux/
 		#xsstrike
 		git clone https://github.com/UltimateHackers/XSStrike.git
 		cd XSStrike
@@ -115,6 +109,7 @@ if test $choice -eq 1
 		cd
 	elif test $choice -eq 3
 	then
+		pkg python python-dev python2 python2-dev
 		#Update pip
 		python2 -m pip install --upgrade pip
 		python -m pip install --upgrade pip
