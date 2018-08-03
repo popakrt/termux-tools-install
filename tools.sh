@@ -14,7 +14,7 @@ if test $choice -eq 1
 		python -m pip install --upgrade pip
 		#Install python dependency Library
 		apt install libxml2 libxml2-dev libxslt libxslt-dev openssl libffi libffi-dev openssl-tool openssl-dev fftw fftw-dev libzmq libzmq-dev freetype freetype-dev libpng libpng-dev pkg-config scrypt -y
-		pkg install libcrypt libcrypt-dev ccrypt libgcrypt libgcrypt-dev -y
+		pkg install libcrypt libcrypt-dev ccrypt libgcrypt libgcrypt-dev libjpeg-turbo-dev libllvm-dev openjpeg -y
 		#upgrade
 		apt upgrade -y
 		#Install msf
